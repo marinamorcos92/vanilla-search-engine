@@ -108,6 +108,8 @@ function search(city) {
 function handleSubmit(event) {
   event.preventDefault();
   let cityInputElement = document.querySelector("#city-input");
+  celcuisLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
   search(cityInputElement.value);
 }
 function convertToCelcuis() {
